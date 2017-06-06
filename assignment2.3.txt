@@ -1,0 +1,10 @@
+What is JIT?
+
+
+JIT -	 Just In Time compiler.
+	 It is a component of the java run time environment (JRE) that improves the performance of java applications at run time.
+	JIT compiler is enable by default and it is activated when a java method is called.
+	It comes with the virtual machine and it is used optionally,it compiles the Bytecode into platform specific executable code that is immediately executed.
+	JIT compiler are supplied as standalone platform dependent native libraries.If the JIT compiler library exists ,the JVM initalizes java native interface (JNI) native code hooks to call JIT functions available in that library instead of the equivalent function in the interpreter.
+	When a method is called for the first time the JIT compiles the method block into native code for this method and stores that in the code block for that method. 
+	JIT causes a slight delay of a noticable delay in initial execution of an application ,due to the time taken to load a compile the Bytecode .Sometimes this dealy is aclled Startup time delay.
